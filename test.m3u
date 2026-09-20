@@ -1,9 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="test.bunny" tvg-name="Big Buck Bunny" group-title="Demo",开源电影：大雄兔 (HLS)
-https://mux.dev
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
 
 #EXTINF:-1 tvg-id="test.bipbop" tvg-name="AWS BipBop" group-title="Demo",AWS 官方自适应测试流 (HLS)
-https://cloudfront.net
+https://fcc3ddae59ed.us-west-2.playback.live-video.net/api/video/v1/us-west-2.893648527354.channel.DmumNckWFTqz.m3u8
 
 #EXTINF:-1 tvg-id="test.dash" tvg-name="Akamai DASH" group-title="Demo",Akamai 动态自适应测试流 (DASH)
-https://akamaized.net
+http://dash.akamaized.net/dash264/TestCases/1a/qualcomm/1/MultiRate.mpd
