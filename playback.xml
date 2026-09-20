@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="iFansClub_webOS_Test" generator-info-url="https://github.com">
+    
+    <!-- 频道1：大雄兔 -->
+    <channel id="test.bunny">
+        <display-name lang="zh">开源电影：大雄兔 (HLS)</display-name>
+    </channel>
+    
+    <!-- 频道2：AWS 官方流 -->
+    <channel id="test.bipbop">
+        <display-name lang="zh">AWS 官方自适应测试流 (HLS)</display-name>
+    </channel>
+
+    <!-- 频道3：DASH 官方流 -->
+    <channel id="test.dash">
+        <display-name lang="zh">Akamai 动态自适应测试流 (DASH)</display-name>
+    </channel>
+
+    <!-- 节目单时间线配置：当前时间（2026年9月20日）全天滚动播放测试 -->
+    <!-- start 和 stop 格式严格遵循：年月日时分秒 +时区 -->
+    <programme channel="test.bunny" start="20260920000000 +0800" stop="20260920120000 +0800">
+        <title lang="zh">开源媒体测试电影-大雄兔(Big Buck Bunny)</title>
+        <desc lang="zh">用于验证 LG webOS 播放器的 HLS 硬解、音视频同步和全屏流畅度。</desc>
+    </programme>
+    
+    <programme channel="test.bunny" start="20260920120000 +0800" stop="20260920235959 +0800">
+        <title lang="zh">开源媒体测试电影-大雄兔(循环场)</title>
+        <desc lang="zh">用于验证客户端在长时间连续播放下的内存回收与高负载稳定性。</desc>
+    </programme>
+
+    <programme channel="test.bipbop" start="20260920000000 +0800" stop="20260920235959 +0800">
+        <title lang="zh">AWS BipBop 多码率自适应技术测试</title>
+        <desc lang="zh">用于测试播放器在网络带宽波动时，自动降级/升级清晰度（ABR）的能力。</desc>
+    </programme>
+
+    <programme channel="test.dash" start="20260920000000 +0800" stop="20260920235959 +0800">
+        <title lang="zh">Akamai MPEG-DASH 自适应流测试</title>
+        <desc lang="zh">用于验证客户端对标准 DASH (.mpd) 协议的解析、初始化分片以及解码兼容性。</desc>
+    </programme>
+</tv>
